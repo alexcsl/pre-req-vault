@@ -6,6 +6,7 @@ use anchor_lang::{
 
 #[derive(Accounts)]
 pub struct Close<'info> {
+    // this is the signer a.k.a someone that signs/authorizes the close instruction
     #[account(mut)]
     pub user: Signer<'info>,
 
